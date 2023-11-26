@@ -1,0 +1,63 @@
+[includeIf "gitdir:~/.local/share/yadm/"] # include for all .git projects under personal/
+  path = ~/.gitconfigs/.gitconfig.personal
+
+[includeIf "gitdir:~/.local/share/gopass/"] # include for all .git projects under personal/
+  path = ~/.gitconfigs/.gitconfig.personal
+
+[includeIf "gitdir:~/.local/share/yadm/"] # include for all .git projects under personal/
+  path = ~/.gitconfigs/.gitconfig.personal
+
+[includeIf "gitdir:~/Workspace/personal/"] # include for all .git projects under personal/
+  path = ~/.gitconfigs/.gitconfig.personal
+
+[includeIf "gitdir:~/Workspace/work/"] # include for all .git projects under work/
+  path = ~/.gitconfigs/.gitconfig.work
+
+[core]
+  editor = vim
+  pager = delta
+  excludesfile = ~/.gitignore # valid everywhere
+
+[commit]
+  gpgsign = true
+
+[credential]
+  helper = store --file ~/.git-credentials.personal
+
+[diff]
+  colorMoved = default
+
+[merge]
+  conflictstyle = diff3
+  tool = vimdiff
+
+[interactive]
+  diffFilter = delta --color-only --features=interactive
+
+[delta]
+  ; (cmd to check current config) delta --diff-so-fancy --show-config
+  tabs = 2
+  navigate = true
+  light = false
+  line-numbers = true
+  syntax-theme = "Visual Studio Dark+"
+  side-by-side = true
+  features = decorations
+  true-color = always
+
+[delta "interactive"]
+  keep-plus-minus-markers = false
+
+[delta "decorations"]
+  commit-decoration-style = blue ol
+  commit-style = raw
+  file-style = omit
+  hunk-header-decoration-style = "#ccccff box"
+  ; hunk-header-file-style = white
+  hunk-header-file-style = "#ccccff"
+  hunk-header-style = file line-number syntax
+  grep-line-number-style = "#ccccff"
+  line-numbers-left-style = "#404040"
+  line-numbers-right-style = "#404040"
+  line-numbers-plus-style = bold green 22
+  line-numbers-minus-style = bold red 52
