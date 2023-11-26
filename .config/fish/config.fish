@@ -13,6 +13,10 @@ fish_add_path $HOME/.local/scripts
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/.nix-profile/bin
 
+### Link Sources ###
+source $HOME/.config/fish/functions/bangbang.fish
+source $HOME/.config/fish/gnupg.fish
+
 ### -- General Settings -- ###
 set fish_greeting # Turns off the intro message when pulling up fish shell
 set EDITOR "nvim" # Sets the $EDITOR to vim
