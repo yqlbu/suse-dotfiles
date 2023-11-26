@@ -1,3 +1,4 @@
+// /usr/share/polkit-1/rules.d/03-polkit-pcscd.rules
 polkit.addRule(function(action, subject) {
     if (action.id == "org.debian.pcsc-lite.access_pcsc" &&
         subject.user == "kev") {
