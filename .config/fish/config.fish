@@ -14,10 +14,14 @@ fish_add_path $HOME/go/bin
 fish_add_path $HOME/.nix-profile/bin
 
 ### Link Sources ###
+source $HOME/.config/fish/themes/cool-beans.fish
 source $HOME/.config/fish/functions/bangbang.fish
 source $HOME/.config/fish/gnupg.fish
 
 ### -- General Settings -- ###
+export CLICOLOR=1
+export LS_COLORS=(vivid generate nord)
+
 set fish_greeting # Turns off the intro message when pulling up fish shell
 set EDITOR "nvim" # Sets the $EDITOR to vim
 
