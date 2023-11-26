@@ -1,11 +1,11 @@
 # Colorscheme: Cool Beans
 set -U fish_color_normal B2B2B2
-set -U fish_color_command normal
+set -U fish_color_command green
 set -U fish_color_quote 9ce781
 set -U fish_color_redirection FFF
 set -U fish_color_end 009900
 set -U fish_color_error F22
-set -U fish_color_param ccccff
+set -U fish_color_param cef2e1
 set -U fish_color_comment 888 --italics
 set -U fish_color_match 0AA
 set -U fish_color_selection --background=B218B2

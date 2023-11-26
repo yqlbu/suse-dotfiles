@@ -14,7 +14,7 @@ fish_add_path $HOME/go/bin
 fish_add_path $HOME/.nix-profile/bin
 
 ### Link Sources ###
-source $HOME/.config/fish/themes/cool-beans.fish
+source $HOME/.config/fish/themes/cool-beans-suse.fish
 source $HOME/.config/fish/functions/bangbang.fish
 source $HOME/.config/fish/gnupg.fish
 
