@@ -3,7 +3,7 @@
   email = sumire88@proton.me
 
 [core]
-  sshCommand = "ssh -i ~/.ssh/sumire88_git_rsa"
+  sshCommand = "ssh -i ~/.ssh/id_rsa_sumire88_git_rsa"
 
 [credential]
   helper = store --file ~/.git-credentials.work
