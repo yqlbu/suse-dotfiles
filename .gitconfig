@@ -1,3 +1,6 @@
+[includeIf "gitdir:~/.config/"] # include for all .git projects under .config/
+  path = ~/.gitconfigs/.gitconfig.personal
+
 [includeIf "gitdir:~/.local/share/yadm/"] # include for all .git projects under yadm/
   path = ~/.gitconfigs/.gitconfig.personal
 
@@ -14,9 +17,6 @@
   editor = vim
   pager = delta
   excludesfile = ~/.gitignore # valid everywhere
-
-[commit]
-  gpgsign = true
 
 [credential]
   helper = store --file ~/.git-credentials.personal
